@@ -59,6 +59,8 @@ function animateStats() {
     });
 }
 
+
+
 function observeStats() {
     const statsSection = document.querySelector("#language-stats");
     const observer = new IntersectionObserver((entries, observer) => {
@@ -71,7 +73,7 @@ function observeStats() {
                 observer.disconnect();
             }
         });
-    }, { threshold: 0.2 }); 
+    }, { threshold: 0.5 }); 
     
     observer.observe(statsSection);
 }
@@ -79,6 +81,8 @@ function observeStats() {
 window.onload = () => {
     observeStats();
 };
+
+
 
 
 document.getElementById("showPlan").addEventListener("click", function() {

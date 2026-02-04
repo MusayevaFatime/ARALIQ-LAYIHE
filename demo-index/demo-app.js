@@ -1,7 +1,3 @@
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     function choosePackage(packageName) {
         const selectedPackageElement = document.getElementById('selected-package');
